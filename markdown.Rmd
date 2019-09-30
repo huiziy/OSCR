@@ -1,9 +1,10 @@
 ---
 title: "Music and Memory Retention"
-subtitle: "The Island Research Project"
+author: "Kaixin Wang, Lizhou Fan, Huizi Yu"
 date: "Spring 2019"
 output: rmarkdown::github_document
 ---
+
 We use this page to demonstrate that we are able to embed this github page inside Wix website and changes made through R will be updated accordingly.
 
 Angela Leo Cindy Miles 

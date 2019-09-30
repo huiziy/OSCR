@@ -1,5 +1,6 @@
 Music and Memory Retention
 ================
+Kaixin Wang, Lizhou Fan, Huizi Yu
 Spring 2019
 
 We use this page to demonstrate that we are able to embed this github page inside Wix website and changes made through R will be updated accordingly.
