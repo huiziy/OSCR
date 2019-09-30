@@ -1,7 +1,7 @@
 ---
 title: "Music and Memory Retention"
 author: "Kaixin Wang, Lizhou Fan, Huizi Yu"
-date: "Spring 2019"
+date: 10.1.2019
 output: rmarkdown::github_document
 ---
 
