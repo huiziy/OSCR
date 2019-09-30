@@ -1,7 +1,7 @@
 ---
 title: "Music and Memory Retention"
 subtitle: "The Island Research Project"
-date: "Spring 2019"
+date: 10.1.2019
 output: rmarkdown::github_document
 ---
 We use this page to demonstrate that we are able to embed this github page inside Wix website and changes made through R will be updated accordingly.
