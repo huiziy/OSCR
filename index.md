@@ -1,7 +1,7 @@
 Music and Memory Retention
 ================
 Kaixin Wang, Lizhou Fan, Huizi Yu
-Spring 2019
+10.1.2019
 
 We use this page to demonstrate that we are able to embed this github page inside Wix website and changes made through R will be updated accordingly.
 
@@ -79,17 +79,17 @@ Box Plots
 
 The median is represented by the black bar in the middle, where the “box” depicts the 1st and 3rd quantiles. Potential outliers are displayed as black circles.
 
-![](markdown_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](index_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
-![](markdown_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](index_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
-![Boxplots for individual Latin Squares](markdown_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![Boxplots for individual Latin Squares](index_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
 **Boxplot for all five Latin Squares combined:**
 
 The median is represented by the black bar in the middle, where the “box” depicts the 1st and 3rd quantiles. Potential outliers are displayed as black circles.
 
-![Boxplot for all five Latin Squares](markdown_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![Boxplot for all five Latin Squares](index_files/figure-markdown_github/unnamed-chunk-5-1.png)
 
 We began our exploratory data analysis by looking at the boxplots for each Latin Square and the boxplot for all five Latin Squares combined. We observe no significant difference in the mean of 5 music treatments in Latin square 2, 3 and 4. In Latin square 1 and 5, there appears to be a larger disparity between treatments. The boxplot for combined model showed no significant difference in mean for each treatment either. We proceed to ANOVA for further analysis.
 
@@ -453,14 +453,14 @@ The ANOVA tables show that treatment is not significant in Latin Squares 2,3,4. 
 Multiple groups comparison
 --------------------------
 
-![Multiple groups comparison on Latin Square 1 and 5](markdown_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![Multiple groups comparison on Latin Square 1 and 5](index_files/figure-markdown_github/unnamed-chunk-7-1.png)
 
 Finding treatment significant in Latin square 1 and 5, we proceed to conducting post-hoc TukeyHSD test to investigate which two music genres lead to statistically different changes in memory performance. From the plot for Latin Square 1, the two confidence intervals for pairwise comparison for "Country Music and Classical Music", and for "Heavy Metal Music and Classical Music” do not contain 0. This indicates that for Latin square 1, the mean of Country Music and Classical Music are statistically significant, as well as the mean of Heavy Metal Music and Classical Music. However, in Latin square 5, all pairwise comparison intervals contain 0. Thus, we conclude for Latin Square 5, none of the 5 treatment means are statistically different from each other.
 
 Residual Diagnostics
 --------------------
 
-![Diagnostics plots for model difference ~ treatment + ID + time](markdown_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![Diagnostics plots for model difference ~ treatment + ID + time](index_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 Based on the residuals vs. fitted values plot, there is no certain pattern in the graph, and the average value of error terms is mostly around zero. This indicates that the assumption of independent error terms with average value of zero is satisfied. Based on the normal QQ-plot, we observe that most of the data points are around the 45-degree line through the origin. This indicates that the assumption of normally distributed error terms is mostly satisfied. Based on the $\\sqrt{standardized\\ residuals}$ vs. fitted values plot, we observe that there is no obvious trend in the value of $\\sqrt{standardized\\ residuals}$. This indicates that the assumption of constant variance of error terms is also mostly satisfied.
 
@@ -480,7 +480,7 @@ It is widely acknowledged that the memory problem, as one of the main mental dom
 
 To discuss the problem of our research and the possible further steps, we visualized the the age distribution of 25 senior male islanders that we sampled during the experiment. As the bar plot of the distribution shows, two points are clear. For age distribution, most of the senior male islanders have the age between 65 to 80 years old. Also, we primarily focus on the investigation of male.
 
-![Age distribution and results of the favorite music type survey](markdown_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![Age distribution and results of the favorite music type survey](index_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
 Since we are able to easily access the females on the island, we can choose to sample female senior islanders in the experiment. In further studies, we consider sample senior female islanders to investigate whether music has effects on memory for them. It would also be helpful to further investigate a larger range of age. It is important to notice that, we accept individual variances, as the latin-square design can handle them. To increase power, we would also like to repeat our experiment with more Latin Squares and more samples.
 
