@@ -5,7 +5,7 @@ Kaixin Wang, Lizhou Fan, Huizi Yu
 
 We use this page to demonstrate that we are able to embed this github page inside Wix website and changes made through R will be updated accordingly.
 
-Angela Leo Cindy Miles
+Angela Leo Cindy Miles heyyyyy this is from the index.md file not the README file
 
 Abstract
 ========
