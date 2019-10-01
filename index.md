@@ -3,7 +3,7 @@ Music and Memory Retention
 Kaixin Wang, Lizhou Fan, Huizi Yu
 10.1.2019
 
-We use this page to demonstrate that we are able to embed this github page inside Wix website and changes made through R will be updated accordingly.heyyyyy this is from the index.md file not the README file
+We use this page to demonstrate that we are able to embed this github page inside Wix website and changes made through R will be updated accordingly.heyyyyy this is from the index.md file not the README file, this is super funnnnnn
 
 Angela Leo Cindy Miles
 
