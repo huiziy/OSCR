@@ -1,0 +1,55 @@
+---
+title: "Data Wrangling in R"
+sugbtitle: "How to Clean Outliers using R"
+author: "Kaixin Wang"
+date: "OSCR - Summer Session C 2019"
+output: html_document
+---
+
+**Note**: Some contents are based on the book *An introduction to data cleaning with R*, by Edwin de Jonge and  Mark van der Loo.
+
+1. Import the input dataset:
+
+```{r, message = F}
+library(readr)
+input = read_csv("person_info.csv")
+input
+```
+
+2. Use boxplot to pinpoint the outliers:
+
+A point is defined as an outlier if it is less than $Q_1 - 1.5 \times IQR$ (interquartile range) or above $Q_3 + 1.5 \times IQR$.
+
+```{r}
+# example 1: outliers exist
+age = input$age
+boxplot(age, xlab = "age", main = "boxplot for the age")
+boxplot.stats(age)$out   # value of the outlier(s)
+
+outliers = boxplot.stats(age)$out      # value of the outlier(s)
+out.index = rep(NA, length(outliers))  # index of the outlier(s)
+for (i in 1:length(outliers)){
+  out.index[i] = which(age == outliers[i])
+}
+age[out.index] <- mean(age, na.rm = T) # impute the outliers with the average value
+age
+# re-plot the boxplot without outliers
+boxplot(age, xlab = "age", main = "boxplot for the age after removing the outliers")
+```
+
+```{r}
+# example 2: no outliers exist
+grade = input$gpa
+boxplot(grade, xlab = "age", main = "boxplot for the age")
+boxplot.stats(grade)$out   # value of the outlier(s)
+
+outliers = boxplot.stats(grade)$out    # value of the outlier(s)
+out.index = rep(NA, length(outliers))  # index of the outlier(s)
+for (i in 1:length(outliers)){
+  out.index[i] = which(grade == outliers[i])
+}
+grade[out.index] <- mean(grade, na.rm = T) # impute the outliers with the average value
+grade
+# re-plot the boxplot to check that the data remains the same
+boxplot(age, xlab = "age", main = "boxplot for the age after removing the outliers")
+```
