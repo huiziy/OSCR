@@ -3,7 +3,7 @@ title: "Data Wrangling in R"
 subtitle: "How to Check & Clean Missing Values / NA using R"
 author: "Kaixin Wang"
 date: "OSCR - Summer Session C 2019"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 **Note**: Some contents are based on the book *An introduction to data cleaning with R*, by Edwin de Jonge and  Mark van der Loo.
